@@ -1,0 +1,30 @@
+.formInput {
+    margin-bottom: 1rem;
+}
+
+    .formInput label {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .formInput input {
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease;
+    }
+
+        .formInput input.focused {
+            border-color: #007bff;
+        }
+
+        .formInput input.error {
+            border-color: red;
+        }
+
+    .formInput .error-message {
+        font-size: 0.8rem;
+        color: red;
+    }

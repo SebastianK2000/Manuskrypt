@@ -1,0 +1,67 @@
+.create {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .create label {
+        text-align: left;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px; 
+        color: #0D1B1E;
+    }
+
+
+    .create h2 {
+        font-size: 24px;
+        color: rebeccapurple;
+        margin-bottom: 20px;
+    }
+
+    .create input,
+    .create textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0 20px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    .create button {
+        background: rebeccapurple;
+        color: #fff;
+        border: 0;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+        .create button:hover {
+            background: mediumpurple;
+        }
+
+.descriptions {
+    width: calc(100% - 22px);
+    height: 200px;
+    resize: vertical;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.labelTop {
+    display: flex;
+    position: relative;
+    top: 13px;
+}
+
+.formHelp {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.inputHelp {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
