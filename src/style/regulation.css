@@ -1,0 +1,27 @@
+.regulations-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.regulations {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+    .regulations a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        color: black;
+    }
+
+        .regulations a:hover {
+            font-weight: bold;
+        }
+
+.regulation-title {
+    color: black;
+    text-decoration: none;
+}
