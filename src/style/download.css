@@ -1,3 +1,10 @@
 button {
     cursor: pointer !important;
+    text-decoration: none !important;
+    z-index: 1000;
+}
+
+.companyDownloadText {
+    text-decoration: none !important;
+    z-index: 1000;
 }

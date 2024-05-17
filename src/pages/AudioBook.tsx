@@ -1,4 +1,4 @@
-import React, { useState, MouseEvent } from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { FaHeadphones } from "react-icons/fa";
 import { FaReadme } from "react-icons/fa";
@@ -52,11 +52,6 @@ const bookStyle = {
 
 
 const AudioBook: React.FC = () => {
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => setIsHovered(true);
-
-    const handleMouseLeave = () => setIsHovered(false);
 
 
     return (

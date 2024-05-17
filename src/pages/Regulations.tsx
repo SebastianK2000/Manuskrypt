@@ -1,79 +1,35 @@
 import React from 'react';
-import '../style/blog.css';
+import { AiOutlineFileText } from 'react-icons/ai';
+import '../style/regulation.css';
+import { Link } from 'react-router-dom';
 
-const BlogPage = () => {
-    const categories = [
-        "Wszystko",
-        "Abonament",
-        "Android",
-        "Ankieta",
-        "Aplikacja",
-        "Artyku³y",
-        "Audiobooki",
-        "Autorzy",
-        "Bestsellery",
-        "Biblioteki",
-        "Blogi",
-        "Book box",
-        "Czytaj bez limitu",
-        "Darmowe czytanie",
-        "E-booki",
-        "E-czytnik",
-        "InkBOOK",
-        "iPhone/iPad",
-        "Je¿ycjada",
-        "Kindle",
-        "Klub Mola Ksi¹¿kowego",
-        "Konkursy",
-        "Magazyn Prolog",
-        "Nowoœci",
-        "Partnerzy",
-        "Platforma Legimi",
-        "PocketBook",
-        "PocktBook",
-        "Prawa autorskie",
-        "Promocje",
-        "Rankingi",
-        "Recenzje",
-        "Samsung",
-        "Spo³ecznoœæ Legimi",
-        "Tablet Dante",
-        "Tydzieñ w Legimi",
-        "Tylko w Legimi",
-        "Wielka 5 Legimi",
-        "Windows 8",
-        "Windows Phone",
-        "Wydarzenia",
-        "Wydawcy",
-        "Wywiady",
-        "Zapowiedzi"
-    ];
-
-    const topics = [
-        "Temat 1",
-        "Temat 2",
-        "Temat 3",
-        // Dodaj wiêcej tematów tutaj
+const Regulations = () => {
+    const regulations = [
+        { title: "Terms of Service for Manuskrypt Services", icon: <AiOutlineFileText /> },
+        { title: "Rules for Borrowing Ebooks on the Manuskrypt Platform", icon: <AiOutlineFileText /> },
+        { title: "Privacy Policy for Manuskrypt Users", icon: <AiOutlineFileText /> },
+        { title: "Regulations for Using the Manuskrypt Mobile App", icon: <AiOutlineFileText /> },
+        { title: "Discounts and Promotions Policy on Manuskrypt", icon: <AiOutlineFileText /> },
+        { title: "Terms of Participation in Contests on Manuskrypt", icon: <AiOutlineFileText /> },
+        { title: "Procedure for Complaints about Services Provided by Manuskrypt", icon: <AiOutlineFileText /> },
+        { title: "Rules for Using Audiobook Services on Manuskrypt", icon: <AiOutlineFileText /> },
+        { title: "Premium Account Usage Policy on Manuskrypt", icon: <AiOutlineFileText /> },
+        { title: "Refund Policy for Purchased Ebooks on Manuskrypt", icon: <AiOutlineFileText /> },
     ];
 
     return (
-        <div className="blog-page">
-            <div className="categories">
-                <h2>Kategorie</h2>
-                <ul>
-                    {categories.map((category, index) => (
-                        <li key={index}>{category}</li>
-                    ))}
-                </ul>
-            </div>
-            <div className="topics">
-                <h2>Tematy</h2>
-                {topics.map((topic, index) => (
-                    <button key={index}>{topic}</button>
+        <main style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', margin: '20px' }} className="regulations-container">
+            <h1 className="regulationsH1">Regulations</h1>
+            <div className="regulations">
+                {regulations.map((regulation, index) => (
+                    <Link to="/PageNotFound" key={index} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+                        {regulation.icon && <div style={{ marginRight: '10px' }}>{regulation.icon}</div>}
+                        <p className="regulation-title" style={{ margin: '10px 0', transition: 'font-weight 0s ease-in-out' }}>{regulation.title}</p>
+                    </Link>
                 ))}
             </div>
-        </div>
+        </main>
     );
 }
 
-export default BlogPage;
+export default Regulations;

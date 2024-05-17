@@ -13,6 +13,9 @@ import FAQ from './pages/FAQ.tsx';
 import Register from './pages/Register.tsx';
 import Blog from './pages/Blog.tsx';
 import Regulations from './pages/Regulations.tsx';
+import PageNotFound from './pages/PageNotFound.tsx';
+import Login from './pages/Login.tsx';
+import Cart from './pages/Cart.tsx';
 
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -30,6 +33,9 @@ createRoot(document.getElementById('root')).render(
                     <Route path="register" index element={<Register />} />
                     <Route path="blog" index element={<Blog />} />
                     <Route path="Regulations" index element={<Regulations />} />
+                    <Route path="PageNotFound" index element={<PageNotFound />} />
+                    <Route path="Login" index element={<Login />} />
+                    <Route path="Cart" index element={<Cart />} />
                 </Route>
             </Routes>
         </BrowserRouter>

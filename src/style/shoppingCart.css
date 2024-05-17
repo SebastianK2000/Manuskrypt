@@ -1,0 +1,54 @@
+.clear-cart-btn {
+    background-color: rebeccapurple;
+    position: relative;
+    top: 200px;
+    box-shadow: 46px 16px 26px -20px rgba(66, 68, 90, 1);
+    border: none;
+}
+
+
+.clear-cart-btn:hover {
+    background-color: mediumpurple;
+}
+
+cart-container mt-5 {
+    height: 50rem !important;
+}
+
+.homeButtonCart {
+    height: 50px;
+    width: 200px;
+}
+
+.payButtonCart {
+    height: 50px;
+    width: 200px;
+}
+
+.payButtonCart, .homeButtonCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-content: center !important;
+    background-color: silver;
+    color: black;
+    border: none;
+    box-shadow: 16px 16px 26px -20px rgba(66, 68, 90, 1);
+}
+
+.payButtonCart:hover, .homeButtonCart:hover {
+    background-color: mediumpurple;
+    box-shadow: 16px 16px 26px -20px rgba(66, 68, 90, 1);
+
+}
+
+.buttonsCart {
+    display: flex;
+    justify-content: space-between;
+}
+
+#cartContainer {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 10px;
+    box-shadow: 16px 16px 26px -20px rgba(66, 68, 90, 1);
+}

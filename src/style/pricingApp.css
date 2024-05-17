@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-decoration: none !important;
 }
 
 :root {
@@ -21,6 +22,7 @@
     position: relative;
     min-height: 100vh;
     min-height: 100dvh;
+    height: 120vh;
     font-family: "Montserrat", sans-serif;
     font-weight: var(--primary-fw);
     font-size: var(--primary-fs);
@@ -30,9 +32,10 @@
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     background-position: top right;
     background-repeat: no-repeat;
-    background-size: 400px 658px;
+    background-size: 1200px 658px;
     z-index: 999;
     margin: 20px;
+    margin-bottom: 50px;
 }
 
     .PricingApp::before {

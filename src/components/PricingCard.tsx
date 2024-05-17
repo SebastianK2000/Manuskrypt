@@ -1,5 +1,7 @@
 import React from "react";
 import "../style/pricingCard.css";
+import { Link } from 'react-router-dom';
+
 const PricingCard = ({ title, price, storage, users, sendUp }) => {
     return (
         <div className="PricingCard">
@@ -12,7 +14,12 @@ const PricingCard = ({ title, price, storage, users, sendUp }) => {
                 <div className="card-users-allowed">{users} users in total</div>
                 <div className="card-send-up">Send up to {sendUp}</div>
             </div>
-            <button className="card-btn">READ MORE</button>
+            <Link style={{ color: 'lightgray' }} to="/PageNotFound">
+                <button className="card-btn">READ MORE</button>
+            </Link>
+
+
+
         </div>
     );
 };

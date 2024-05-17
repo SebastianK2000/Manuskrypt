@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/blog.css';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     const categories = [
@@ -64,7 +65,9 @@ const Blog = () => {
                 <h2>Categories</h2>
                 <ul>
                     {categories.map((category, index) => (
-                        <li key={index} style={{ cursor: 'pointer' }}>{category}</li>
+                        <li key={index} style={{ cursor: 'pointer' }}>
+                            <Link to="/PageNotFound">{category}</Link>
+                        </li>
                     ))}
                 </ul>
             </div>
@@ -73,7 +76,9 @@ const Blog = () => {
                 {topics.map((topic, index) => (
                     <div key={index} className="topic-item">
                         <h3>{topic}</h3>
-                        <button className="readMoreButton">Read more</button>
+                        <Link to="/PageNotFound">
+                            <button className="readMoreButton">Read more</button>
+                        </Link>
                     </div>
                 ))}
             </div>

@@ -45,10 +45,11 @@
         border: 2px solid transparent;
         outline: transparent;
         transition: 0.125s ease;
-        color: var(--neutral-white);
+        color: black; /* Kolor tekstu na przycisku */
         display: flex;
         align-items: center;
         justify-content: center;
+        text-decoration: none !important;
     }
 
         .PricingCard .card-btn:is(:focus-visible, :hover) {
