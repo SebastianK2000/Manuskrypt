@@ -217,6 +217,7 @@ export function Layout() {
 
                         <div className="text-center py-3" style={{ borderTop: '1px solid #dee2e6' }}>
                             &copy; 2009-2024 Manuskrypt S.A. All rights reserved.
+                            Page version: 1.5
                         </div>
                     </footer>
                 </StickyNav>
