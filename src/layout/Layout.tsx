@@ -130,7 +130,7 @@ export function Layout() {
                                     <Button className="iconSocialMediaHover" style={{ ...icons, backgroundColor: 'rebeccapurple', boxShadow: '16px 16px 26px -20px rgba(66, 68, 90, 1)' }} variant="outline-secondary">
                                         <img style={{ ...imageStyles, position: 'relative', left: '5px' }} className="account" src='../Resources/Account.svg' />
                                         <Dropdown style={{ width: '10px', height: '30px', position: 'relative', top: '5px', right: '50px' }}>
-                                            <Dropdown.Toggle style={{ width: '40px', height: '10px', position: 'relative', backgroundColor: 'transparent', borderStyle: 'none' }} variant="secondary" id="dopdown-basic">
+                                            <Dropdown.Toggle style={{ width: '40px', height: '10px', position: 'relative',top: '-3px', backgroundColor: 'transparent', borderStyle: 'none' }} variant="secondary" id="dopdown-basic">
 
                                             </Dropdown.Toggle>
 
