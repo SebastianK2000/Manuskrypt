@@ -1,7 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import "../style/settings.css";
-import PageNotFound from '../pages/PageNotFound';
 
 const LibraryCard = () => {
     return (

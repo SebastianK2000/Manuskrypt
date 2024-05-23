@@ -1,4 +1,4 @@
-button {
+.button {
     cursor: pointer !important;
     text-decoration: none !important;
     z-index: 1000;
@@ -7,4 +7,68 @@ button {
 .companyDownloadText {
     text-decoration: none !important;
     z-index: 1000;
+}
+
+.iconDownload {
+    width: 250px;
+    height: 70px;
+    background-color: black;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fonts {
+    font-size: 30px;
+}
+
+.companyDownloadText {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    position: relative;
+    right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.imgStyleDownload {
+    color: white;
+    font-size: 10px;
+    margin: 10px;
+    height: 40px;
+    position: relative;
+    right: 30px;
+}
+
+.laptop {
+    margin: 10px;
+}
+
+.systemPc {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+.downLeftSide {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 100px 55px 100px;
+    position: relative;
+    top: -420px;
+}
+
+.doubleDownLeftSide {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 100px;
+    position: relative;
+    top: -420px;
 }

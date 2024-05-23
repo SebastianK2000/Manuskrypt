@@ -1,4 +1,3 @@
-import React from 'react';
 import { AiOutlineFileText } from 'react-icons/ai';
 import '../style/regulation.css';
 import { Link } from 'react-router-dom';

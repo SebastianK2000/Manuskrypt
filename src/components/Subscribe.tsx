@@ -1,7 +1,5 @@
-import React from 'react';
 import "../style/settings.css";
 import { Link } from 'react-router-dom';
-import Price from '../pages/Price';
 
 const Subscribe = () => {
     return (

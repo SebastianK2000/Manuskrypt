@@ -1,0 +1,226 @@
+.imageStyles {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    border-radius: 30%;
+    position: relative;
+    right: -90px;
+    top: -40px;
+    background-color: rebeccapurple;
+}
+
+.styleNav {
+    background-color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: auto;
+}
+
+.footerText {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #f4f4f4;
+    margin: 20px;
+    width: auto;
+}
+
+.socialIcon {
+    width: 50px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 110px;
+}
+
+.styleNav {
+    background-color: #f4f4f4; 
+    width: 100%; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.containerFluidStyle {
+    border-radius: 20px;
+    height: 100px;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+.logo { 
+    position: relative;
+    top: 5px;
+    right: -10px;
+    width: 300px;
+    height: 100px;
+}
+
+.linkStyle {
+    text-decoration: none;
+    color: black;
+}
+
+.formDflexStyle {
+    background-color: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.formConstolStyle {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    right: -60px;
+    top: -25px;
+}
+
+.allCursorPointer {
+    cursor: pointer;
+}
+
+
+
+
+/* old styles */
+
+.root {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../Resources/Frame.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+const containerStyles {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+const mainStyles {
+    flex: 1;
+}
+
+const footerStyles {
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 300px;
+        height: 300px;
+        top: 30px;
+        right: 50px;
+    }
+
+    .icons {
+        right: 100px;
+    }
+
+    .social-icon {
+        left: 70px;
+    }
+
+    .footer {
+        margin: 10px;
+    }
+
+    .footer-text {
+        font-size: '16px';
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .logo {
+        width: 200px;
+        height: 200px;
+        top: 20px;
+        right: 30px;
+    }
+
+    .icons {
+        right: 50px;
+    }
+
+    .social-icon {
+        left: 40px;
+    }
+
+    .footer {
+        margin: 5px;
+    }
+
+    .footer-text {
+        font-size: '14px';
+    }
+}
+
+.footerHoverText:hover {
+    color: darkgrey !important;
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.iconSocialMediaHover:hover,
+.footerHoverText:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+.navMainSite {
+    position: relative;
+    left: 50px;
+}
+
+    .navMainSite:hover {
+        color: darkgrey !important;
+    }
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+/*
+    .stickyNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+*/

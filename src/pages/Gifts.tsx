@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { data } from '../data/mockData';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import '../style/gifts.css';

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../style/loginForm.css';
 import { FaUser, FaLock } from "react-icons/fa";
 import { Link } from 'react-router-dom';
