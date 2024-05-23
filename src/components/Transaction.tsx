@@ -2,7 +2,7 @@ import "../style/settings.css";
 
 const Transaction = () => {
     return (
-        <div className="componentSettings">
+        <div style={{marginTop: '150px'}} className="componentSettings">
             <h2>Transaction</h2>
             <p>No transactions</p>
         </div>
