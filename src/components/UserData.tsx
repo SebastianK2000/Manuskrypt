@@ -7,19 +7,37 @@ const UserData = () => {
         firstName: "John",
         lastName: "Doe",
         phone: "123-456-7890",
-        password: "********"
+        password: "********",
+        address: {
+            street: "123 Main St",
+            city: "Anytown",
+            state: "CA",
+            zip: "12345"
+        }
     });
 
     const [editData, setEditData] = useState(userData);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setEditData({ ...editData, [name]: value });
+        if (name in editData.address) {
+            setEditData({
+                ...editData,
+                address: { ...editData.address, [name]: value }
+            });
+        } else {
+            setEditData({ ...editData, [name]: value });
+        }
     };
 
     const handleSave = (field) => {
         setUserData({ ...userData, [field]: editData[field] });
         alert(`${field} has been updated!`);
+    };
+
+    const handleSaveAddress = () => {
+        setUserData({ ...userData, address: editData.address });
+        alert("Address has been updated!");
     };
 
     return (
@@ -53,7 +71,7 @@ const UserData = () => {
             </div>
 
             <div className="divUserLastName">
-            <h2>Last Name</h2>
+                <h2 className="divH2UserData">Last Name</h2>
                 <p>Your Last name: {userData.lastName}</p>
                 <input
                     type="text"
@@ -67,7 +85,7 @@ const UserData = () => {
             </div>
 
             <div className="divUserPhone">
-            <h2>Phone</h2>
+                <h2 className="divH2UserData">Phone</h2>
                 <p>Your Phone: {userData.phone}</p>
                 <input
                     type="tel"
@@ -81,7 +99,7 @@ const UserData = () => {
             </div>
 
             <div className="divUserPassword">
-            <h2>Password</h2>
+                <h2 className="divH2UserData">Password</h2>
                 <input
                     type="password"
                     name="password"
@@ -93,7 +111,52 @@ const UserData = () => {
                 <button onClick={() => handleSave("password")} className="buttonSaveSettings">Save</button>
             </div>
 
+            <div className="divUserAddress">
+                <h2 className="divH2UserData">Address</h2>
+                <p>Street: {userData.address.street}</p>
+                <input
+                    type="text"
+                    name="street"
+                    value={editData.address.street}
+                    onChange={handleChange}
+                    placeholder="Enter street"
+                    className="inputField"
+                />
+                <p>City: {userData.address.city}</p>
+                <input
+                    type="text"
+                    name="city"
+                    value={editData.address.city}
+                    onChange={handleChange}
+                    placeholder="Enter city"
+                    className="inputField"
+                />
+                <p>State: {userData.address.state}</p>
+                <input
+                    type="text"
+                    name="state"
+                    value={editData.address.state}
+                    onChange={handleChange}
+                    placeholder="Enter state"
+                    className="inputField"
+                />
+                <p>Zip: {userData.address.zip}</p>
+                <input
+                    type="text"
+                    name="zip"
+                    value={editData.address.zip}
+                    onChange={handleChange}
+                    placeholder="Enter zip code"
+                    className="inputField"
+                />
+                <button onClick={handleSaveAddress} className="buttonSaveSettings">Save Address</button>
             </div>
+
+            <div className="deleteAccount">
+                <h2 className="divdeleteAccount">Do you want to delete account?</h2>
+                <button onClick={() => handleSave("delete")} className="deleteButton">Delete</button>
+            </div>
+        </div>
     );
 }
 

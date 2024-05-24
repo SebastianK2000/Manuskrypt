@@ -17,6 +17,7 @@ import PageNotFound from './pages/PageNotFound.tsx';
 import Login from './pages/Login.tsx';
 import Cart from './pages/Cart.tsx';
 import Settings from './pages/Settings.tsx';
+import Home from './pages/Home.tsx';
 
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')).render(
                     <Route path="Login" index element={<Login />} />
                     <Route path="Cart" index element={<Cart />} />
                     <Route path="Settings" index element={<Settings />} />
+                    <Route path="Home" index element={<Home />} />
                 </Route>
             </Routes>
         </BrowserRouter>

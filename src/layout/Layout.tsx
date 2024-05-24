@@ -32,10 +32,12 @@ export function Layout() {
                     <Navbar className={classNames('stickyNav', 'styleNav')}>
                         <Container fluid className="containerFluidStyle">
                             <Navbar.Brand>
-                                <img
-                                    className="logo"
-                                    src="../Resources/logo.svg"
-                                />
+                                <Link to="Home">
+                                    <img
+                                        className="logo"
+                                        src="../Resources/logo.svg"
+                                    />
+                                </Link>
                             </Navbar.Brand>
                             <Navbar.Toggle style={{ backgroundColor: 'white' }} />
                             <Navbar.Collapse style={{ backgroundColor: '#Af4f4f4' }}>
@@ -44,7 +46,7 @@ export function Layout() {
 
                                 >
 
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Login">Home</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Home">Home</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="/AudioBook">Ebooki & audiobooki</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Books">Books</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Gifts">Gift</Link></Nav.Link>

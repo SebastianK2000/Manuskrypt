@@ -35,9 +35,10 @@
 }
 
 .divChangeEmail {
-    height: 400px;
+    height: 300px;
     border: none;
     border-radius: 10px;
+    margin-bottom: 80px;
 }
 
 .componentSettings, .divChangeEmail {
@@ -60,13 +61,15 @@
     border: none;
     padding: 20px;
     border-radius: 10px;
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 
 .divChangeEmail, .divUserDetails {
-    width: 100%;
+    border: 0.1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .divChangeEmail h2, .divUserDetails h2 {
@@ -116,10 +119,51 @@
 }
 
 
-.divUserLastName, .divUserPassword, .divUserPhone {
+.divUserLastName, .divUserPassword, .divUserPhone, .deleteAccount, .divUserAddress {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 30px;
+    border: 0.1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.divH2UserData {
+    font-size: 20px !important;
+}
+
+.divUserLastName {
+    margin-top: 70px;
+}
+
+.deleteButton {
+    background-color: red;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deleteButton:hover {
+    background-color: lightcoral;
+}
+
+.deleteAccount {
+    position: relative;
+    left: 450px;
+    height: 100px;
+    width: 200px;
+    font-size: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.divdeleteAccount {
+    font-size: 10px;
 }
