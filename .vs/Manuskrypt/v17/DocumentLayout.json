@@ -1,0 +1,157 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\pages\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\pages\\home.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\layout\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\layout\\layout.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\pages\\audiobook.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\pages\\audiobook.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\components\\pricingcard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\components\\pricingcard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\pages\\books.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\pages\\books.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\pages\\download.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\pages\\download.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\style\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\style\\home.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|c:\\users\\lenovo\\onedrive\\pulpit\\manuskrypt\\src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D26C784E-34E9-4518-BDD8-F4FFAE1F9A9D}|manuskrypt.esproj|solutionrelative:src\\main.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "main.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\main.tsx",
+              "RelativeDocumentMoniker": "src\\main.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\main.tsx",
+              "RelativeToolTip": "src\\main.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-12T09:18:13.319Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Books.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Books.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Books.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Books.tsx",
+              "RelativeToolTip": "src\\pages\\Books.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-01T16:18:15.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AudioBook.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\AudioBook.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\AudioBook.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\AudioBook.tsx",
+              "RelativeToolTip": "src\\pages\\AudioBook.tsx",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAANYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-01T14:49:13.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PricingCard.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\components\\PricingCard.tsx",
+              "RelativeDocumentMoniker": "src\\components\\PricingCard.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\components\\PricingCard.tsx",
+              "RelativeToolTip": "src\\components\\PricingCard.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-06-01T14:43:46.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Download.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Download.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Download.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Download.tsx",
+              "RelativeToolTip": "src\\pages\\Download.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-24T18:30:32.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "home.css",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\style\\home.css",
+              "RelativeDocumentMoniker": "src\\style\\home.css",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\style\\home.css",
+              "RelativeToolTip": "src\\style\\home.css",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-25T18:35:45.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Home.tsx",
+              "RelativeDocumentMoniker": "src\\pages\\Home.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\pages\\Home.tsx",
+              "RelativeToolTip": "src\\pages\\Home.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-21T19:16:38.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Layout.tsx",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\layout\\Layout.tsx",
+              "RelativeDocumentMoniker": "src\\layout\\Layout.tsx",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Pulpit\\Manuskrypt\\src\\layout\\Layout.tsx",
+              "RelativeToolTip": "src\\layout\\Layout.tsx",
+              "ViewState": "AQIAADgAAAAAAAAAAAAAwDIAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-21T18:53:13.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
