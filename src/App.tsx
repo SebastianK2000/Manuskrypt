@@ -1,6 +1,20 @@
-import React from 'react';
+﻿import React from 'react';
 import { Container } from 'react-bootstrap';
+import classNames from 'classnames';
+import { ImageSlider } from "./components/ImageSlider";
+import car1 from "./assets/book/images1.jpg";
+import car2 from "./assets/book/images2.jpg";
+import car3 from "./assets/book/images3.jpg";
+import car4 from "./assets/book/images9.jpg";
+import car5 from "./assets/book/images5.jpg";
 
+const IMAGES = [
+    { url: car1, alt: "Car One" },
+    { url: car2, alt: "Car Two" },
+    { url: car3, alt: "Car Three" },
+    { url: car4, alt: "Car Four" },
+    { url: car5, alt: "Car Five" },
+];
 
 const contentStyle = {
     display: 'flex',
@@ -41,11 +55,18 @@ const bookStyle = {
     cursor: 'pointer',
 }
 
-
-function App() {
+const Home = () => {
     return (
-        <Container style={{ width: '100%', height: '100%' }}>
-
+        <Container>
+            <div style={{ display: 'flex', justifyContent: 'center', margin: '20px', fontSize: '20px' }}>
+                The most popular in this week!
+            </div>
+            <div className="mainHomeSlider">
+                <ImageSlider images={IMAGES} />
+            </div>
+            <div style={{ display: 'flex', justifyContent: 'center', margin: '20px', fontSize: '20px' }}>
+                Or select another bestseller!
+            </div>
             <main style={content}>
                 <div style={contentStyle}>
                     <div style={bookComponent} className="bookElement">
@@ -86,7 +107,7 @@ function App() {
                 <div style={contentSecond}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Kamien.jpg" alt="HP - Kamie� filozoficzny" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Kamien.jpg" alt="HP - Kamieñ filozoficzny" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
@@ -138,16 +159,8 @@ function App() {
                 </div>
 
             </main>
-
-
-
         </Container>
-
-
-
-
     );
-}
+};
 
-export default App;
-
+export default Home;

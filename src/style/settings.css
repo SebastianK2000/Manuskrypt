@@ -4,17 +4,25 @@
     cursor: pointer;
 }
 
-.selectOptionData:hover, .selectOptionSubscribe:hover, .selectOptionRecommend:hover, .selectOptionStatic:hover, .selectOptionLibraryClub:hover, .selectOptionTransactions:hover, .selectOptionLibraryCard:hover {
+.selectOptionData:hover,
+.selectOptionSubscribe:hover,
+.selectOptionRecommend:hover,
+.selectOptionStatic:hover,
+.selectOptionLibraryClub:hover,
+.selectOptionTransactions:hover,
+.selectOptionLibraryCard:hover {
     font-weight: bold;
 }
 
-.componentSettings {
-    width: 600px;
+.componentSettings, .divSubscribe {
+    max-width: 800px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    left: 250px;
+    left: 120px;
+    top: 50px;
 }
 
 .mainContainerSettings {
@@ -22,69 +30,38 @@
     width: 100%;
     min-height: 60vh;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .selectedOptionsView {
     flex-grow: 1;
 }
 
-.buttonEmailSaveSettings {
+.buttonEmailSaveSettings, .buttonSaveSettings {
     width: 250px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.divChangeEmail {
-    height: 300px;
-    border: none;
-    border-radius: 10px;
-    margin-bottom: 80px;
-}
-
-.componentSettings, .divChangeEmail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.divSubscribe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 300px;
-    width: 500px;
-    position: relative;
-    left: 300px;
-    top: 100px;
-    border: none;
+.formContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-
-.divChangeEmail, .divUserDetails {
     border: 0.1px solid gray;
     border-radius: 10px;
-    padding: 20px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.divChangeEmail h2, .divUserDetails h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.divUserDetails {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    margin: -30px;
+    align-items: center;
 }
+
+    .formContainer h2 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+    }
 
 .inputField {
     width: 300px;
@@ -96,12 +73,12 @@
     transition: border-color 0.3s;
 }
 
-.inputField:focus {
-    outline: none;
-}
+    .inputField:focus {
+        outline: none;
+    }
 
-.buttonEmailSaveSettings {
-    width: 100%;
+.buttonEmailSaveSettings, .buttonSaveSettings {
+    width: 300px;
     padding: 10px;
     color: white;
     border: none;
@@ -111,59 +88,44 @@
     transition: background-color 0.3s;
 }
 
-.buttonSaveSettings {
-    height: 50px;
-    width: 300px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-
-}
-
-
-.divUserLastName, .divUserPassword, .divUserPhone, .deleteAccount, .divUserAddress {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 30px;
-    border: 0.1px solid gray;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.divH2UserData {
-    font-size: 20px !important;
-}
-
-.divUserLastName {
-    margin-top: 70px;
-}
-
 .deleteButton {
     background-color: red;
-    width: 100px;
-    height: 30px;
+    width: 300px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.deleteButton:hover {
-    background-color: lightcoral;
-}
+    .deleteButton:hover {
+        background-color: lightcoral;
+    }
 
-.deleteAccount {
-    position: relative;
-    left: 450px;
-    height: 100px;
-    width: 200px;
-    font-size: 10px !important;
+.divChangeEmail, .divUserDetails, .divUserLastName, .divUserPassword, .divUserPhone, .divUserAddress {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
-
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 70%;
+    font-size: 15px;
 }
 
-.divdeleteAccount {
-    font-size: 10px;
+.formContainer h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
 }
+
+.divH2UserData{
+    font-size: 15px;
+}
+
+.

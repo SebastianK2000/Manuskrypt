@@ -15,35 +15,36 @@ import Blog from './pages/Blog.tsx';
 import Regulations from './pages/Regulations.tsx';
 import PageNotFound from './pages/PageNotFound.tsx';
 import Login from './pages/Login.tsx';
-import Cart from './pages/Cart.tsx';
+import Cart from './cart/Cart.tsx';
 import Settings from './pages/Settings.tsx';
 import Home from './pages/Home.tsx';
+import { ShopContextProvider } from "./context/shop-context";
 
 createRoot(document.getElementById('root')).render(
     <React.StrictMode>
         <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<App />} />
-                    <Route path="audiobook" index element={<AudioBook />} />
-                    <Route path="books" index element={<Books />} />
-                    <Route path="download" index element={<Download />} />
-                    <Route path="gifts" index element={<Gifts />} />
-                    <Route path="price" index element={<Price />} />
-                    <Route path="help" index element={<Help />} />
-                    <Route path="faq" index element={<FAQ />} />
-                    <Route path="register" index element={<Register />} />
-                    <Route path="blog" index element={<Blog />} />
-                    <Route path="Regulations" index element={<Regulations />} />
-                    <Route path="PageNotFound" index element={<PageNotFound />} />
-                    <Route path="Login" index element={<Login />} />
-                    <Route path="Cart" index element={<Cart />} />
-                    <Route path="Settings" index element={<Settings />} />
-                    <Route path="Home" index element={<Home />} />
-                </Route>
-            </Routes>
+            <ShopContextProvider>
+                <Routes>
+                    <Route path="/" element={<Layout />}>
+                        <Route index element={<App />} />
+                        <Route path="audiobook" element={<AudioBook />} />
+                        <Route path="download" element={<Download />} />
+                        <Route path="gifts" element={<Gifts />} />
+                        <Route path="price" element={<Price />} />
+                        <Route path="help" element={<Help />} />
+                        <Route path="faq" element={<FAQ />} />
+                        <Route path="register" element={<Register />} />
+                        <Route path="blog" element={<Blog />} />
+                        <Route path="regulations" element={<Regulations />} />
+                        <Route path="login" element={<Login />} />
+                        <Route path="settings" element={<Settings />} />
+                        <Route path="app" element={<App />} />
+                        <Route path="books" element={<Books />} />
+                        <Route path="cart" element={<Cart />} />
+                        <Route path="*" element={<PageNotFound />} />
+                    </Route>
+                </Routes>
+            </ShopContextProvider>
         </BrowserRouter>
     </React.StrictMode>
 );
-
-

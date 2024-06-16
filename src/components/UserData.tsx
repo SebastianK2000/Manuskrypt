@@ -43,7 +43,7 @@ const UserData = () => {
     return (
         <div className="componentSettings">
             <div className="divChangeEmail">
-                <h2>Change Email</h2>
+                <h2 className="divH2UserData">Change Email</h2>
                 <p>Current: {userData.email}</p>
                 <input
                     type="email"
@@ -57,7 +57,7 @@ const UserData = () => {
             </div>
 
             <div className="divUserDetails">
-                <h2>First Name</h2>
+                <h2 className="divH2UserData">First Name</h2>
                 <p>Your First name: {userData.firstName}</p>
                 <input
                     type="text"
@@ -152,8 +152,8 @@ const UserData = () => {
                 <button onClick={handleSaveAddress} className="buttonSaveSettings">Save Address</button>
             </div>
 
-            <div className="deleteAccount">
-                <h2 className="divdeleteAccount">Do you want to delete account?</h2>
+            <div className="divUserPassword">
+                <h2 className="divH2UserData">Do you want to delete account?</h2>
                 <button onClick={() => handleSave("delete")} className="deleteButton">Delete</button>
             </div>
         </div>

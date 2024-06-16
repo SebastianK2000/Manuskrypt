@@ -8,6 +8,7 @@ import PageNotFound from '../pages/PageNotFound';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import classNames from 'classnames';
+import App from '../App.tsx';
 
 export function Layout() {
     const location = useLocation();
@@ -32,7 +33,7 @@ export function Layout() {
                     <Navbar className={classNames('stickyNav', 'styleNav')}>
                         <Container fluid className="containerFluidStyle">
                             <Navbar.Brand>
-                                <Link to="Home">
+                                <Link to="App">
                                     <img
                                         className="logo"
                                         src="../Resources/logo.svg"
@@ -46,7 +47,7 @@ export function Layout() {
 
                                 >
 
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Home">Home</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="App">Home</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="/AudioBook">Ebooki & audiobooki</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Books">Books</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Gifts">Gift</Link></Nav.Link>
@@ -61,7 +62,7 @@ export function Layout() {
                                         aria-label="Search"
                                     />
 
-                                    <Button className={classNames('iconSocialMediaHover', 'icons')} variant="outline-secondary">
+                                    <Button className={classNames('iconSocialMediaHover', 'icons')} style={{ backgroundColor: 'rebeccapurple' }} variant="outline-secondary">
                                         <img className={classNames('search', 'imageStyles')} src='../Resources/magnifier.svg' />
                                     </Button>
 
@@ -71,7 +72,7 @@ export function Layout() {
                                         </Link>
                                     </Button>
 
-                                    <Button className={classNames('iconSocialMediaHover', 'icons')} style={{ backgroundColor: 'rebeccapurple', boxShadow: '16px 16px 26px -20px rgba(66, 68, 90, 1)' }} variant="outline-secondary">
+                                    <Button className={classNames('icons')} style={{ backgroundColor: 'rebeccapurple', boxShadow: '16px 16px 26px -20px rgba(66, 68, 90, 1)' }} variant="outline-secondary">
                                         <img style={{ position: 'relative', left: '5px' }} className="account, imageStyles" src='../Resources/Account.svg' />
                                         <Dropdown style={{ width: '10px', height: '30px', position: 'relative', top: '5px', right: '50px' }}>
                                             <Dropdown.Toggle style={{ width: '40px', height: '10px', position: 'relative',top: '-3px', backgroundColor: 'transparent', borderStyle: 'none' }} variant="secondary" id="dopdown-basic">
