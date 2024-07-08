@@ -3,6 +3,8 @@ import { data } from '../data/mockData';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import '../style/gifts.css';
 
+import gift from "../assets/frameGift.png";
+
 interface DataItem {
     img: string;
 }
@@ -64,7 +66,7 @@ export function Gifts() {
             <img
                 style={{ borderRadius: '10px' }}
                 className='w-full h-[440px] object-cover'
-                src='../Resources/frameGift.png'
+                src={gift}
                 alt='Cover'
             />
 

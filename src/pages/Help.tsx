@@ -7,7 +7,7 @@ export const Help = () => {
     const [description, setDescription] = useState("");
     const [email, setEmail] = useState("");
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
         setCategory("");

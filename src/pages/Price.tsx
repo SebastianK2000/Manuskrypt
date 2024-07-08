@@ -29,24 +29,24 @@ function Price() {
                 <div className="pricing-cards">
                     <PricingCard
                         title="Essential"
-                        price={selectMonthly ? "20.99$" : "188.9$"}
+                        price={selectMonthly ? 20.99 : 188.9}
                         storage="Read and listen without limit"
-                        users="Access on 1 devices"
-                        sendUp="You can upload 4 of your own ebooks per month"
+                        users={1}
+                        sendUp={4}
                     />
                     <PricingCard
                         title="Deluxe"
-                        price={selectMonthly ? "34.99$" : "349.9$"}
+                        price={selectMonthly ? 34.99 : 349.9}
                         storage="Read and listen without limit"
-                        users="Access on 2 devices"
-                        sendUp="Send 4 ebooks per month, Free delivery of paper books"
+                        users={2}
+                        sendUp={4}
                     />
                     <PricingCard
                         title="Premium"
-                        price={selectMonthly ? "79.99$" : "499.9$"}
+                        price={selectMonthly ? 79.99 : 499.9}
                         storage="Read and listen without limit"
-                        users="Access on 4 devices"
-                        sendUp="Upload 4 ebooks per month, Free book delivery, Change formats when you want with synchrobooks"
+                        users={4}
+                        sendUp={4}
                     />
                 </div>
             </div>

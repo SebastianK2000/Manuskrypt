@@ -59,6 +59,7 @@ const FormInput: React.FC<FormInputProps> = ({
                 onBlur={handleFocus}
                 onFocus={() => setFocused(true)}
                 className={error ? "error" : ""}
+                id={inputProps.id?.toString()}
             />
             {error && <span className="error-message">{errorMessage}</span>}
         </div>

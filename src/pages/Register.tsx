@@ -5,7 +5,9 @@ import { Link } from 'react-router-dom';
 
 
 const Register = () => {
-    const [values, setValues] = useState({
+    const [values, setValues] = useState<{
+        [key: string]: string;
+    }>({
         username: "",
         email: "",
         birthday: "",
@@ -40,6 +42,7 @@ const Register = () => {
             type: "date",
             placeholder: "Birthday",
             label: "Birthday",
+            errorMessage: "",
         },
         {
             id: 4,

@@ -19,10 +19,6 @@
     background-color: rebeccapurple;
 }
 
-.styleNav {
-    background-color: white;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -53,17 +49,21 @@
 }
 
 .styleNav {
-    background-color: #f4f4f4; 
-    width: 100%; 
+    background-color: #f4f4f4 !important;
+    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 0;
+    z-index: 999;
+    position: sticky;
+    top: 0;
 }
 
 .containerFluidStyle {
     border-radius: 20px;
     height: 100px;
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4 !important;
+    z-index: 999;
 }
 
 .logo { 
@@ -113,14 +113,14 @@
 body {
     width: 100%;
     height: 100%;
-    background-image: url('../Resources/Frame.svg');
+    background-image: url('src/assets/Frame.svg');
     background-size: cover;
     background-attachment: fixed;
     padding: 0;
     margin: 0;
 }
 
-const containerStyles {
+.containerStyles {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -128,11 +128,11 @@ const containerStyles {
     justify-content: space-between;
 }
 
-const mainStyles {
+.mainStyles {
     flex: 1;
 }
 
-const footerStyles {
+.footerStyles {
     flex-shrink: 0;
 }
 

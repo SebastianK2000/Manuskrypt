@@ -3,6 +3,14 @@ import { Outlet } from 'react-router-dom';
 import '../style/download.css';
 import { Link } from 'react-router-dom';
 
+import huawei from "../assets/huawei.png";
+import google from "../assets/google.png";
+import apple from "../assets/apple.png";
+import microsoft from "../assets/microsoft.png";
+import mockup from "../assets/mockup.png";
+import laptop from "../assets/laptop.png";
+import appleLaptop from "../assets/appleLaptop.png";
+
 function Download() {
     return (
         <Container>
@@ -15,38 +23,37 @@ function Download() {
 
                             <Link style={{ textDecoration: 'none' }} to="/PageNotFound">
                                 <button className="iconDownload">
-                                    <img className="imgStyleDownload" src="../Resources/huawei.png" alt="AppGallery" />
+                                    <img className="imgStyleDownload" src={huawei} alt="AppGallery" />
                                     <p className="companyDownloadText">Download in <br /> AppGallery</p>
                                 </button>
                             </Link>
 
                             <Link style={{ textDecoration: 'none' }} to="/PageNotFound">
                                 <button className="iconDownload">
-                                    <img className="imgStyleDownload" src="../Resources/google.png" alt="Google Play" />
+                                    <img className="imgStyleDownload" src={google} alt="Google Play" />
                                     <p className="companyDownloadText">Download in <br /> Google Play</p>
                                 </button>
                             </Link>
 
                             <Link style={{ textDecoration: 'none' }} to="/PageNotFound">
                                 <button className="iconDownload">
-                                    <img className="imgStyleDownload" src="../Resources/apple.png" alt="App Store" />
+                                    <img className="imgStyleDownload" src={apple} alt="App Store" />
                                     <p className="companyDownloadText">Download in <br /> App Store</p>
                                 </button>
                             </Link>
 
                             <Link style={{ textDecoration: 'none' }} to="/PageNotFound" className="icon-download">
                                 <button className="iconDownload">
-                                    <img className="imgStyleDownload" src="../Resources/microsoft.png" alt="Microsoft Store" />
+                                    <img className="imgStyleDownload" src={microsoft} alt="Microsoft Store" />
                                     <p className="companyDownloadText">Download in <br /> Microsoft</p>
                                 </button>
                             </Link>
-
 
                         </div>
                     </div>
 
                     <div style={{ display: 'flex', position: 'relative', top: '-400px', right: '100px' }}>
-                        <img style={{ display: 'flex' }} src="../Resources/mockup.png" alt="Mockup smartphone/Kingle" />
+                        <img style={{ display: 'flex' }} src={mockup} alt="Mockup smartphone/Kingle" />
                     </div>
                     <div className="downLeftSide">
                         <h2 className="styles.fonts">Sync your Kindle or PocketBook e-reader</h2>
@@ -54,11 +61,11 @@ function Download() {
                         <div>
 
                             <Link to="/PageNotFound">
-                            <p className="systemPc"><img className="laptop" src="../Resources/laptop.png" alt="Computer Windows" />Windows 64bit application (7 SP1, 8 or 10)</p>
+                                <p className="systemPc"><img className="laptop" src={laptop} alt="Computer Windows" />Windows 64bit application (7 SP1, 8 or 10)</p>
                             </Link>
 
                             <Link to="/PageNotFound">
-                                <p className="systemPc"><img className="laptop" src="../Resources/appleLaptop.png" alt="Computer macOS" />App for macOS (10.9 and up)</p>
+                                <p className="systemPc"><img className="laptop" src={appleLaptop} alt="Computer macOS" />App for macOS (10.9 and up)</p>
                             </Link>
 
                         </div>

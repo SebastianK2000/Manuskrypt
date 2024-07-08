@@ -8,9 +8,9 @@ import Recommendet from '../components/Recommend';
 import Subscribe from '../components/Subscribe';
 
 export function Settings() {
-    const [selectedOption, setSelectedOption] = useState(null);
+    const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
-    const handleOptionClick = (option) => {
+    const handleOptionClick = (option: string) => {
         setSelectedOption(option);
     };
 

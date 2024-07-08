@@ -1,7 +1,7 @@
 import "../style/pricingCard.css";
 import { Link } from 'react-router-dom';
 
-const PricingCard = ({ title, price, storage, users, sendUp }) => {
+const PricingCard = ({ title, price, storage, users, sendUp }: { title: string, price: number, storage: string, users: number, sendUp: number }) => {
     return (
         <div className="PricingCard">
             <header>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container } from 'react-bootstrap';
 import '../style/shop.css';
 import { BookData } from '../data/BookData';

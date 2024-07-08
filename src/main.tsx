@@ -17,10 +17,9 @@ import PageNotFound from './pages/PageNotFound.tsx';
 import Login from './pages/Login.tsx';
 import Cart from './cart/Cart.tsx';
 import Settings from './pages/Settings.tsx';
-import Home from './pages/Home.tsx';
 import { ShopContextProvider } from "./context/shop-context";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
         <BrowserRouter>
             <ShopContextProvider>

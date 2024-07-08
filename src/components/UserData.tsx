@@ -1,8 +1,21 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../style/settings.css";
 
 const UserData = () => {
-    const [userData, setUserData] = useState({
+    const [userData, setUserData] = useState<{
+        email: string;
+        firstName: string;
+        lastName: string;
+        phone: string;
+        password: string;
+        address: {
+            street: string;
+            city: string;
+            state: string;
+            zip: string;
+        };
+        [key: string]: any;
+    }>({
         email: "user@example.com",
         firstName: "John",
         lastName: "Doe",
@@ -18,7 +31,7 @@ const UserData = () => {
 
     const [editData, setEditData] = useState(userData);
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         if (name in editData.address) {
             setEditData({
@@ -30,7 +43,7 @@ const UserData = () => {
         }
     };
 
-    const handleSave = (field) => {
+    const handleSave = (field: string) => {
         setUserData({ ...userData, [field]: editData[field] });
         alert(`${field} has been updated!`);
     };

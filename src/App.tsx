@@ -1,12 +1,26 @@
-﻿import React from 'react';
-import { Container } from 'react-bootstrap';
-import classNames from 'classnames';
+﻿import { Container } from 'react-bootstrap';
 import { ImageSlider } from "./components/ImageSlider";
 import car1 from "./assets/book/images1.jpg";
 import car2 from "./assets/book/images2.jpg";
 import car3 from "./assets/book/images3.jpg";
 import car4 from "./assets/book/images9.jpg";
 import car5 from "./assets/book/images5.jpg";
+
+import billy from "./assets/Billy.jpg";
+import instytut from "./assets/Instytut.jpg";
+import kosiarze from "./assets/Kosiarze.jpg";
+import thunderhead from "./assets/Thunderhead.jpg";
+import diuna from "./assets/Diuna.jpg";
+import theyBoth from "./assets/TheyBoth.jpg";
+import kamien from "./assets/Kamien.jpg";
+import cujo from "./assets/Cujo.jpg";
+import holly from "./assets/Holly.jpg";
+import mistery from "./assets/Mistery.jpg";
+import theShining from "./assets/TheShining.jpg";
+import insygnia from "./assets/Insygnia.jpg";
+import wiezien from "./assets/Wiezien.jpg";
+import it from "./assets/It.jpg";
+import needfull from "./assets/Needfull.jpg";
 
 const IMAGES = [
     { url: car1, alt: "Car One" },
@@ -16,29 +30,28 @@ const IMAGES = [
     { url: car5, alt: "Car Five" },
 ];
 
-const contentStyle = {
+const contentStyle: React.CSSProperties = {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'row' as 'row',
     justifyContent: 'space-around'
 };
 
-const contentSecond = {
+const contentSecond: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
     marginTop: '20px'
 };
 
-const content = {
+const content: React.CSSProperties = {
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'column' as 'column',
     justifyContent: 'space-between',
     minHeight: 'calc(100vh - 100px)',
-    padding: '20px',
-    minHeight: '300px'
+    padding: '20px'
 };
 
-const bookComponent = {
+const bookComponent: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -71,17 +84,17 @@ const Home = () => {
                 <div style={contentStyle}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%', }} src="../Resources/Billy.jpg" alt="Billy Summers" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src={billy} alt="Billy Summers" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '81%' }} src="../Resources/Instytut.jpg" alt="Instytut" />
+                            <img style={{ ...bookStyle, width: '100%', height: '81%' }} src={instytut} alt="Instytut" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Kosiarze.jpg" alt="Kosiarze" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={kosiarze} alt="Kosiarze" />
                         </div>
                     </div>
                 </div>
@@ -89,17 +102,17 @@ const Home = () => {
                 <div style={contentSecond}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Thunderhead.jpg" alt="Thunderhead" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src={thunderhead} alt="Thunderhead" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Diuna.jpg" alt="Diuna" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={diuna} alt="Diuna" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/TheyBoth.jpg" alt="They Both..." />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={theyBoth} alt="They Both..." />
                         </div>
                     </div>
                 </div>
@@ -107,17 +120,17 @@ const Home = () => {
                 <div style={contentSecond}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Kamien.jpg" alt="HP - Kamieñ filozoficzny" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src={kamien} alt="HP - Kamieñ filozoficzny" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Cujo.jpg" alt="Cujo" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={cujo} alt="Cujo" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Holly.jpg" alt="Holly" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={holly} alt="Holly" />
                         </div>
                     </div>
                 </div>
@@ -125,17 +138,17 @@ const Home = () => {
                 <div style={contentSecond}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Mistery.jpg" alt="Mistery" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src={mistery} alt="Mistery" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/TheShining.jpg" alt="The Shining" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={theShining} alt="The Shining" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Insygnia.jpg" alt="HP - Insygnia Smierci" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={insygnia} alt="HP - Insygnia Smierci" />
                         </div>
                     </div>
                 </div>
@@ -143,21 +156,20 @@ const Home = () => {
                 <div style={contentSecond}>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src="../Resources/Wiezien.jpg" alt="HP - Wiezien Azkabanu" />
+                            <img style={{ ...bookStyle, width: '100%', height: '80%' }} src={wiezien} alt="HP - Wiezien Azkabanu" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/It.jpg" alt="It" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={it} alt="It" />
                         </div>
                     </div>
                     <div style={bookComponent} className="bookElement">
                         <div>
-                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src="../Resources/Needfull.jpg" alt="Needfull" />
+                            <img style={{ ...bookStyle, width: '100%', height: '82%' }} src={needfull} alt="Needfull" />
                         </div>
                     </div>
                 </div>
-
             </main>
         </Container>
     );

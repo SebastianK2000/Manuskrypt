@@ -1,12 +1,28 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ShopContext } from "../context/shop-context";
 import "../style/shoppingCart.css";
 
 
-export const CartItem = (props) => {
+import React from "react";
+
+type CartItemProps = {
+    data: {
+        id: number;
+        productName: string;
+        price: number;
+        productImage: string;
+    };
+};
+
+export const CartItem: React.FC<CartItemProps> = (props) => {
     const { id, productName, price, productImage } = props.data;
     const { cartItems, addToCart, removeFromCart, updateCartItemCount } =
-        useContext(ShopContext);
+        useContext(ShopContext) || {} as {
+            cartItems: any;
+            addToCart: (id: number) => void;
+            removeFromCart: (id: number) => void;
+            updateCartItemCount: (count: number, id: number) => void;
+        };
 
     return (
         <div className="cartItem">

@@ -1,3 +1,12 @@
+import logo from '../assets/logo.svg';
+import magnifier from '../assets/magnifier.svg';
+import basket from '../assets/basket.svg';
+import account from '../assets/account.svg';
+import instagram from '../assets/instagram.svg';
+import facebook from '../assets/facebook.svg';
+import twitter from '../assets/twitter.svg';
+import gmail from '../assets/gmail.svg';
+
 import { Outlet, useLocation } from 'react-router-dom';
 import { Button, Container, Form, Nav, Navbar, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -8,13 +17,19 @@ import PageNotFound from '../pages/PageNotFound';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import classNames from 'classnames';
-import App from '../App.tsx';
+import backgroundImage from '../assets/Frame.svg';
 
 export function Layout() {
     const location = useLocation();
     const isPageNotFound = location.pathname === '/PageNotFound';
     const isLogin = location.pathname === '/Login';
     const isRegister = location.pathname === '/Register';
+
+    const containerStyles = {
+        backgroundImage: { backgroundImage },
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed'
+    };
 
     switch (true) {
 
@@ -29,14 +44,14 @@ export function Layout() {
 
         default:
             return (
-                <StickyNav>
+                <StickyNav style={containerStyles}>
                     <Navbar className={classNames('stickyNav', 'styleNav')}>
-                        <Container fluid className="containerFluidStyle">
-                            <Navbar.Brand>
+                    <Container fluid className="containerFluidStyle">
+                    <Navbar.Brand>
                                 <Link to="App">
                                     <img
                                         className="logo"
-                                        src="../Resources/logo.svg"
+                                        src={logo}
                                     />
                                 </Link>
                             </Navbar.Brand>
@@ -63,17 +78,17 @@ export function Layout() {
                                     />
 
                                     <Button className={classNames('iconSocialMediaHover', 'icons')} style={{ backgroundColor: 'rebeccapurple' }} variant="outline-secondary">
-                                        <img className={classNames('search', 'imageStyles')} src='../Resources/magnifier.svg' />
+                                        <img className={classNames('search', 'imageStyles')} src={magnifier} />
                                     </Button>
 
                                     <Button className={classNames('iconSocialMediaHover', 'icons')} style={{ backgroundColor: 'rebeccapurple' }} variant="outline-secondary">
                                         <Link to='Cart'>
-                                            <img className={classNames('basket', 'imageStyles')} src='../Resources/Basket.svg' />
+                                            <img className={classNames('basket', 'imageStyles')} src={basket} />
                                         </Link>
                                     </Button>
 
                                     <Button className={classNames('icons')} style={{ backgroundColor: 'rebeccapurple', boxShadow: '16px 16px 26px -20px rgba(66, 68, 90, 1)' }} variant="outline-secondary">
-                                        <img style={{ position: 'relative', left: '5px' }} className="account, imageStyles" src='../Resources/Account.svg' />
+                                        <img style={{ position: 'relative', left: '5px' }} className="account, imageStyles" src={account} />
                                         <Dropdown style={{ width: '10px', height: '30px', position: 'relative', top: '5px', right: '50px' }}>
                                             <Dropdown.Toggle style={{ width: '40px', height: '10px', position: 'relative',top: '-3px', backgroundColor: 'transparent', borderStyle: 'none' }} variant="secondary" id="dopdown-basic">
 
@@ -113,7 +128,7 @@ export function Layout() {
                                 <div className="col-md-3">
                                     <h5 style={{ position: 'relative', left: '100px' }}>Ebooki & audiobooki</h5>
                                     <ul style={{ position: 'relative', left: '100px' }} className="list-unstyled">
-                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Gift">Gift</Link></a></li>
+                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Gifts">Gift</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Price">Price</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Books">Books</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Download">Download app!</Link></a></li>
@@ -131,27 +146,35 @@ export function Layout() {
                                 <div className="col-md-3" style={{ display: 'flex', alignItems: 'center' }}>
                                     <h5 style={{ position: 'relative', top: '-70px', left: '320px' }}>Contact</h5>
                                     <ul style={{ display: 'flex', flexDirection: 'row' }}>
+
+                                        <Link to="/PageNotFound">
                                         <img className={classNames('iconSocialMediaHover', 'socialIcon', 'allCursorPointer')}
-                                            src="../Resources/instagram.svg"
+                                            src={instagram}
                                             alt="Instagram"
-                                            onClick={() => window.location.href = "PageNotFound"}
-                                        />
+                                            />
+                                        </Link>
+
+                                        <Link to="/PageNotFound">
                                         <img className={classNames('iconSocialMediaHover', 'socialIcon', 'allCursorPointer')}
-                                            src="../Resources/facebook.svg"
+                                            src={facebook}
                                             alt="Facebook"
-                                            onClick={() => window.location.href = "PageNotFound"}
-                                        />
+                                            />
+                                        </Link>
+
+                                        <Link to="/PageNotFound">
                                         <img className={classNames('iconSocialMediaHover', 'socialIcon', 'allCursorPointer')}
-                                            src="../Resources/twitter.svg"
+                                            src={twitter}
                                             alt="Twitter"
-                                            onClick={() => window.location.href = "PageNotFound"}
-                                        />
-                                        <img className={classNames('iconSocialMediaHover', 'socialIcon', 'allCursorPointer')}
+                                            />
+                                        </Link>
+
+                                        <Link to="/PageNotFound">
+                                            <img className={classNames('iconSocialMediaHover', 'socialIcon', 'allCursorPointer')}
                                             style={{ height: '55px', width: '60px' }}
-                                            src="../Resources/gmail.svg"
+                                            src={gmail}
                                             alt="Gmail"
-                                            onClick={() => window.location.href = "PageNotFound"}
-                                        />
+                                            />
+                                        </Link>
                                     </ul>
                                 </div>
                             </div>
@@ -159,7 +182,7 @@ export function Layout() {
 
                         <div className="text-center py-3" style={{ borderTop: '1px solid #dee2e6' }}>
                             &copy; 2009-2024 Manuskrypt S.A. All rights reserved.
-                            <p>Page version: 1.8.1</p>
+                            <p>Page version: 2.0.1</p>
                         </div>
                     </footer>
                 </StickyNav>
