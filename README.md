@@ -1,3 +1,11 @@
+
+
+## Link to the page:
+
+https://manuskrypt.netlify.app
+
+
+
 <<<<<<< HEAD
 # React + TypeScript + Vite
 
