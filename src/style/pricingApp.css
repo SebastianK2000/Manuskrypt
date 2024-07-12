@@ -18,18 +18,17 @@
     --neutral-white: hsl(0, 0%, 100%);
 }
 
+.PricingCard {
+    width: 500px;
+}
+
 .PricingApp {
     position: relative;
-    min-height: 100vh;
-    min-height: 100dvh;
-    height: 120vh;
     font-family: "Montserrat", sans-serif;
     font-weight: var(--primary-fw);
     font-size: var(--primary-fs);
     display: grid;
     place-items: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 1200px 658px;
@@ -136,5 +135,8 @@ button {
         .PricingApp .pricing-cards {
             flex-direction: column;
             gap: 2em;
+        }
+        .PricingCard {
+            width: 400px;
         }
 }

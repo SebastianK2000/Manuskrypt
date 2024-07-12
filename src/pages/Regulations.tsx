@@ -17,7 +17,7 @@ const Regulations = () => {
     ];
 
     return (
-        <main style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', margin: '20px' }} className="regulations-container">
+        <main className="regulations-container">
             <h1 className="regulationsH1">Regulations</h1>
             <div className="regulations">
                 {regulations.map((regulation, index) => (

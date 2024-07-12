@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import notFound from "../assets/404.svg";
+import '../style/notFound.css';
 
 const PageNotFound = () => {
     const location = useLocation();
@@ -9,12 +10,12 @@ const PageNotFound = () => {
     if (isNotFoundPage) {
         return (
             <>
-                <main style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', color: 'violet' }}>
-                    <div style={{ width: '50vw', height: '50vw', display: 'flex', alignItems: 'flex-start', justifyContent: 'center', flexDirection: 'column' }} className="notFound">
-                        <img src={notFound} alt="404" />
+                <main className="main-container-not-found">
+                    <div className="notFound">
+                        <img className="img-not-found" src={notFound} alt="404" />
                         
                         <Link to="/" style={{ color: 'white', textDecoration: 'none' }}>
-                            <button style={{ textDecoration: 'none', width: '800px' }}>Back to the Home</button>
+                            <button className="not-found-button" style={{ textDecoration: 'none', width: '800px' }}>Back to the Home</button>
                         </Link>
                     </div>
                 </main>

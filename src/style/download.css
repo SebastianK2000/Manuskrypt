@@ -2,11 +2,13 @@
     cursor: pointer !important;
     text-decoration: none !important;
     z-index: 1000;
+    max-width: 90%;    
 }
 
 .companyDownloadText {
     text-decoration: none !important;
     z-index: 1000;
+    max-width: 90%;    
 }
 
 .iconDownload {
@@ -22,10 +24,12 @@
     justify-content: flex-end;
     cursor: pointer;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    max-width: 90% !important;    
 }
 
 .fonts {
     font-size: 30px;
+    max-width: 90%;    
 }
 
 .companyDownloadText {
@@ -36,6 +40,7 @@
     right: 30px;
     cursor: pointer;
     text-decoration: none;
+    max-width: 90%;    
 }
 
 .imgStyleDownload {
@@ -45,30 +50,56 @@
     height: 40px;
     position: relative;
     right: 30px;
+    max-width: 90%;    
 }
 
 .laptop {
     margin: 10px;
+    max-width: 90%;    
 }
 
 .systemPc {
     cursor: pointer;
     text-decoration: underline;
     color: black;
+    max-width: 90%;    
 }
 
 .downLeftSide {
     display: flex;
     flex-wrap: wrap;
     margin: 100px 100px 55px 100px;
-    position: relative;
-    top: -420px;
+    max-width: 90%;    
 }
 
 .doubleDownLeftSide {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 100px;
-    position: relative;
-    top: -420px;
+    margin: 50px 100px;
+    max-width: 90%;    
+}
+
+.main-download-container {
+    max-width: 90%;
+    flex-wrap: wrap;
+}
+
+.MockUp {
+    max-width: 90%;    
+}
+
+.main-element-download-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.element-download-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 90%;
 }

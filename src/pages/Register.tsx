@@ -2,7 +2,16 @@ import { useState } from "react";
 import "../style/register.css";
 import FormInput from "../components/FormInput";
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+const RegisterRoot = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+
+`;
 
 const Register = () => {
     const [values, setValues] = useState<{
@@ -77,25 +86,27 @@ const Register = () => {
     };
 
     return (
-        <div className="Register">
-            <form onSubmit={handleSubmit}>
-                <h1>Register</h1>
-                {inputs.map((input) => (
-                    <FormInput
-                        key={input.id}
-                        {...input}
-                        value={values[input.name]}
-                        onChange={onChange}
-                    />
-                ))}
-                <button type="submit">Submit</button>
+        <RegisterRoot>
+            <div className="Register">
+                <form className="register-form" onSubmit={handleSubmit}>
+                    <h1>Register</h1>
+                    {inputs.map((input) => (
+                        <FormInput
+                            key={input.id}
+                            {...input}
+                            value={values[input.name]}
+                            onChange={onChange}
+                        />
+                    ))}
+                    <button type="submit">Submit</button>
 
-                <div className="registerLink">
-                    <p>Do you have an account?<Link to="/Login">  Log in</Link></p>
-                    <p>Do you don't need account?<Link to="/Books">  Back to the book page</Link></p>
-                </div>
-            </form>
-        </div>
+                    <div className="registerLink">
+                        <p>Do you have an account?<Link to="/Login">  Log in</Link></p>
+                        <p>Do you don't need account?<Link to="/Books">  Back to the book page</Link></p>
+                    </div>
+                </form>
+            </div>     
+        </RegisterRoot>
     );
 };
 

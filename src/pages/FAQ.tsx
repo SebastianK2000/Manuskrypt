@@ -10,11 +10,11 @@ export const FAQ = () => {
     return (
 
         <Accordion className="questionConteiner" defaultActiveKey="0">
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <div className="faq-serach-container">
                 <h3 style={{
                     fontSize: '1.5rem', marginBottom: '40px', marginTop: '40px', color: '#3D3D3B' }}>How can we help you?</h3>
                 <Form.Control
-                    style={{ margin: '10px', height: '50px', width: '600px', display: 'flex', justifyContent: 'center', alignItems: 'center', boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.5)' }}
+                    style={{ margin: '10px', height: '50px', width: '150%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}
                     type="search"
                     placeholder="Search"
                     className="me-2"
@@ -23,7 +23,7 @@ export const FAQ = () => {
             </div>
 
 
-            <div style={{
+            <div className="component-faq" style={{
                 marginTop: '50px', marginBottom: '40px'}}>
                 <Accordion.Item className="faqItem" eventKey="0">
                     <Accordion.Header style={fontColor}>What is Manuskrypt and how does it work?</Accordion.Header>

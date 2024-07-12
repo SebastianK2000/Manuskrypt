@@ -1,6 +1,6 @@
 .options {
     margin-top: 50px;
-    width: 220px;
+    max-width: 100%;
     cursor: pointer;
 }
 
@@ -15,14 +15,13 @@
 }
 
 .componentSettings, .divSubscribe {
-    max-width: 800px;
+    max-width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 120px;
-    top: 50px;
+    margin: 10px;
 }
 
 .mainContainerSettings {
@@ -37,6 +36,11 @@
 
 .selectedOptionsView {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .buttonEmailSaveSettings, .buttonSaveSettings {
@@ -78,7 +82,10 @@
     }
 
 .buttonEmailSaveSettings, .buttonSaveSettings {
-    width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     color: white;
     border: none;
@@ -128,4 +135,57 @@
     font-size: 15px;
 }
 
-.
+.recomend-component {
+    background-color: #e9e9e9; 
+    height: 100%; 
+    width: 90%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.recommend-p, .recommend-h1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommend-h1 {
+    font-size: 15px;
+    margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .mainContainerSettings {
+        flex-direction: column;
+    }
+    .formContainer {
+        width: 90%;
+    }
+    .inputField {
+        width: 90%;
+    }
+    .buttonEmailSaveSettings, .buttonSaveSettings {
+        width: 90%;
+    }
+    .divChangeEmail, .divUserDetails, .divUserLastName, .divUserPassword, .divUserPhone, .divUserAddress {
+        width: 90%;
+    }
+    .recomend-component {
+        width: 110%;
+        margin: 20px;
+        padding: 20px;
+    }
+    .options {
+        width: 100%;
+    }
+    .selectOptionLibraryClub, .selectOptionData, .selectOptionLibraryCard, .selectOptionRecommend, .selectOptionStatic, .selectOptionSubscribe, .selectOptionTransactions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

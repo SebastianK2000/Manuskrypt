@@ -30,7 +30,6 @@ export function Settings() {
                 <p className="selectOptionTransactions" onClick={() => handleOptionClick('Transactions')}>Transactions</p>
                 <hr />
                 <p className="selectOptionLibraryCard" onClick={() => handleOptionClick('Library Card')}>Library Card</p>
-                <hr />
             </div>
 
             <div className="selectedOptionsView">

@@ -44,7 +44,7 @@ export function Layout() {
 
         default:
             return (
-                <StickyNav style={containerStyles}>
+                <StickyNav className="stickyNav-main" style={{ ...containerStyles, backgroundImage: 'url(your-image-url-here)'}}>
                     <Navbar className={classNames('stickyNav', 'styleNav')}>
                     <Container fluid className="containerFluidStyle">
                     <Navbar.Brand>
@@ -56,14 +56,14 @@ export function Layout() {
                                 </Link>
                             </Navbar.Brand>
                             <Navbar.Toggle style={{ backgroundColor: 'white' }} />
-                            <Navbar.Collapse style={{ backgroundColor: '#Af4f4f4' }}>
+                            <Navbar.Collapse className="navbar" style={{ backgroundColor: '#Af4f4f4' }}>
                                 <Nav
-                                    style={{ backgroundColor: '#f4f4f4', maxHeight: '100px' }}
+                                    style={{ backgroundColor: '#f4f4f4'}}
 
                                 >
 
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="App">Home</Link></Nav.Link>
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="/AudioBook">Ebooki & audiobooki</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="/AudioBook">Audiobooki</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Books">Books</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Gifts">Gift</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Download">Download</Link></Nav.Link>
@@ -89,7 +89,7 @@ export function Layout() {
 
                                     <Button className={classNames('icons')} style={{ backgroundColor: 'rebeccapurple', boxShadow: '16px 16px 26px -20px rgba(66, 68, 90, 1)' }} variant="outline-secondary">
                                         <img style={{ position: 'relative', left: '5px' }} className="account, imageStyles" src={account} />
-                                        <Dropdown style={{ width: '10px', height: '30px', position: 'relative', top: '5px', right: '50px' }}>
+                                        <Dropdown style={{ width: '10px', height: '30px', position: 'relative', top: '5px', right: '47.5px' }}>
                                             <Dropdown.Toggle style={{ width: '40px', height: '10px', position: 'relative',top: '-3px', backgroundColor: 'transparent', borderStyle: 'none' }} variant="secondary" id="dopdown-basic">
 
                                             </Dropdown.Toggle>
@@ -126,8 +126,8 @@ export function Layout() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-3">
-                                    <h5 style={{ position: 'relative', left: '100px' }}>Ebooki & audiobooki</h5>
-                                    <ul style={{ position: 'relative', left: '100px' }} className="list-unstyled">
+                                    <h5>Ebooki & audiobooki</h5>
+                                    <ul className="list-unstyled">
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Gifts">Gift</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Price">Price</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Books">Books</Link></a></li>
@@ -135,16 +135,16 @@ export function Layout() {
                                     </ul>
                                 </div>
                                 <div className="col-md-3">
-                                    <h5 style={{ position: 'relative', left: '200px' }}>Information</h5>
-                                    <ul style={{ position: 'relative', left: '200px' }} className="list-unstyled">
+                                    <h5>Information</h5>
+                                    <ul className="list-unstyled">
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Blog">Blog</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Help">Help</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Regulations">Regulations</Link></a></li>
-                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'footerText')} to="FAQ">FAQ</Link></a></li>
+                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'footerText', "linkStyle")} to="FAQ">FAQ</Link></a></li>
                                     </ul>
                                 </div>
-                                <div className="col-md-3" style={{ display: 'flex', alignItems: 'center' }}>
-                                    <h5 style={{ position: 'relative', top: '-70px', left: '320px' }}>Contact</h5>
+                                <div className="col-md-3">
+                                    <h5 className="col-md-3">Contact</h5>
                                     <ul style={{ display: 'flex', flexDirection: 'row' }}>
 
                                         <Link to="/PageNotFound">

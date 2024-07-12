@@ -1,6 +1,6 @@
 .create {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 90%;
+    margin: 20px;
     text-align: center;
 }
 
@@ -8,8 +8,9 @@
         text-align: left;
         display: block;
         margin-top: 20px;
-        margin-bottom: 10px; 
+        margin-bottom: 20px; 
         color: #0D1B1E;
+        max-width: 90%;
     }
 
 
@@ -17,28 +18,31 @@
         font-size: 24px;
         color: rebeccapurple;
         margin-bottom: 20px;
+        max-width: 90%;
     }
 
     .create input,
     .create textarea {
         width: 100%;
-        padding: 10px;
+        padding: 20px;
         margin: 10px 0 20px 0;
         border: 1px solid #ddd;
         border-radius: 5px;
         box-sizing: border-box;
         font-size: 16px;
+        max-width: 90%;
     }
 
     .create button {
         background: rebeccapurple;
         color: #fff;
         border: 0;
-        padding: 10px 20px;
+        padding: 20px;
         border-radius: 5px;
         cursor: pointer;
         font-size: 16px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        max-width: 90%;
     }
 
         .create button:hover {
@@ -49,22 +53,26 @@
     width: calc(100% - 22px);
     height: 200px;
     resize: vertical;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
 }
 
 .labelTop {
     display: flex;
     position: relative;
     top: 13px;
+    max-width: 90%;
 }
 
 .formHelp {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     margin: 20px;
     position: relative;
     right: 20px;
+    max-width: 90%;
 }
 
 .inputHelp {
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
 }

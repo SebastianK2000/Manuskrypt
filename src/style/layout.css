@@ -1,8 +1,38 @@
+.stickyNav-main {
+    max-width: 100%;
+}
+
+.logo {
+    width: 300px;
+    margin-left: 20px;
+    max-width: 100%;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    position: relative;
+    right: 50px;
+}
+
+.navbar-colapse-custom-styles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .imageStyles {
     width: 30px;
     height: 30px;
     margin: 20px;
     cursor: pointer;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icons {
@@ -13,10 +43,8 @@
     justify-content: center;
     margin: 15px;
     border-radius: 30%;
-    position: relative;
-    right: -90px;
-    top: -40px;
     background-color: rebeccapurple;
+    max-width: 100%;
 }
 
 .content {
@@ -25,6 +53,7 @@
     justify-content: space-between;
     padding: 20px;
     width: auto;
+    max-width: 100%;
 }
 
 .footerText {
@@ -33,10 +62,28 @@
     text-decoration: none;
 }
 
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50px;
+}
+
 .footer {
     background-color: #f4f4f4;
     margin: 20px;
     width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .socialIcon {
@@ -44,18 +91,23 @@
     padding: 10px;
     margin: 10px;
     cursor: pointer;
-    position: relative;
-    left: 110px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .styleNav {
     background-color: #f4f4f4 !important;
-    width: 100%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 0;
     z-index: 999;
     position: sticky;
     top: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerFluidStyle {
@@ -64,41 +116,50 @@
     width: 100%;
     background-color: #f4f4f4 !important;
     z-index: 999;
-}
-
-.logo { 
-    position: relative;
-    top: 5px;
-    right: -10px;
-    width: 300px;
-    height: 100px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
 
 .linkStyle {
     text-decoration: none;
     color: black;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .formDflexStyle {
-    background-color: hidden;
-    width: 0px;
-    height: 0px;
+    width: 500px !important;
+    height: 80%;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    background-color: #f4f4f4;
 }
 
 .formConstolStyle {
     height: 50px;
     width: 200px;
-    position: relative;
-    right: -60px;
-    top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .allCursorPointer {
     cursor: pointer;
 }
 
-
-/* old styles */
+.basket {
+    position: relative;
+    right: 15px;
+}
 
 .root {
     margin: 0;
@@ -108,7 +169,6 @@
     margin: 0;
     padding: 0;
 }
-
 
 body {
     width: 100%;
@@ -136,16 +196,54 @@ body {
     flex-shrink: 0;
 }
 
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1276px) {
+    .logo {
+        flex-wrap: wrap;
+    }
+
+    .d-flex {
+        position: relative;
+        left: 30%;
+        bottom: 1px;
+        max-width: 100px;
+    }
+
+    .me-2 { 
+        display: none !important;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        right: 200px;
+    }
+}
+
+@media screen and (max-width: 857px) {
+    .logo {
+        width: 100px !important;
+        height: 100px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .logo {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: auto;
         top: 10px;
         left: 30px;
     }
 
     .icons {
-        right: 1000%;
+        right: 100%;
     }
 
     .social-icon {
@@ -154,24 +252,68 @@ body {
 
     .footer {
         width: 100vw;
-        height: 200px;
+        height: 100%;
+        max-width: 90%;
     }
 
     .footer-text {
-        font-size: '16px';
+        font-size: 16px;
+        max-width: 90%;
     }
 
     .styleNav {
         flex-wrap: wrap;
     }
+
+    .formDflexStyle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .navbar-colapse-custom-styles {
+        flex-direction: column;
+    }
+
+    .containerFluidStyle {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .nav-link {
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .navbar-collapse {
+        position: relative;
+        right: 40px;
+        margin: 0;
+        padding: 0;
+    
+    }
 }
 
 @media screen and (max-width: 576px) {
     .logo {
-        width: 200px;
-        height: 200px;
+        width: 250px !important;
+        height: auto;
         top: 20px;
         right: 30px;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        flex-wrap: wrap;
     }
 
     .icons {
@@ -184,10 +326,20 @@ body {
 
     .footer {
         margin: 5px;
+        max-width: 100%;
     }
 
     .footer-text {
-        font-size: '14px';
+        font-size: 14px;
+    }
+
+    .navbar-nav { 
+        position: relative;
+        right: 10px;
+    }
+
+    .styleNav { 
+        position: relative;
     }
 }
 
@@ -208,22 +360,11 @@ body {
     left: 50px;
 }
 
-    .navMainSite:hover {
-        color: darkgrey !important;
-    }
+.navMainSite:hover {
+    color: darkgrey !important;
+}
 
 .logo:hover {
     transform: scale(1.2);
     transition: transform 0.5s;
 }
-
-/*
-    .stickyNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
-    background-color: white;
-}
-*/

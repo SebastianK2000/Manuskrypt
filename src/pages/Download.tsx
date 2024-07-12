@@ -13,11 +13,12 @@ import appleLaptop from "../assets/appleLaptop.png";
 
 function Download() {
     return (
-        <Container>
-            <main style={{ overflowX: 'hidden' }}>
-                <div style={{ height: '1100px' }}>
-                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', position: 'relative' }}>
-                        <div style={{ position: 'relative', top: '100px' }}>
+        <Container className="main-download-container">
+            <main>
+                <div style={{ height: '100%' }}>
+                    <div className="main-element-download-page">
+                        <div className="element-download-page">
+                        <img className="MockUp" src={mockup} alt="Mockup smartphone/Kingle" />
                             <h1 className="fonts">Download App Manuskrypt</h1>
                             <p>Available for all the most popular ebook readers and operating systems.</p>
 
@@ -52,9 +53,6 @@ function Download() {
                         </div>
                     </div>
 
-                    <div style={{ display: 'flex', position: 'relative', top: '-400px', right: '100px' }}>
-                        <img style={{ display: 'flex' }} src={mockup} alt="Mockup smartphone/Kingle" />
-                    </div>
                     <div className="downLeftSide">
                         <h2 className="styles.fonts">Sync your Kindle or PocketBook e-reader</h2>
                         <p>The service is available for owners of Kindle Touch, 7, 8, 10, 11, Paperwhite 1-5, Voyage, Oasis 1-3 and Scribe models. Download the dedicated application to your computer.</p>
