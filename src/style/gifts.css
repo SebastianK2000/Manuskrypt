@@ -70,3 +70,20 @@
 .duration-300 {
     transition-duration: 300ms;
 }
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

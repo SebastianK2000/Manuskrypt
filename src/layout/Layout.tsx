@@ -19,6 +19,21 @@ import Register from '../pages/Register';
 import classNames from 'classnames';
 import backgroundImage from '../assets/Frame.svg';
 
+function updateBackgroundImage() {
+    const screenWidth = window.innerWidth;
+    const body = document.body;
+
+    if (screenWidth <= 391) {
+        body.style.backgroundImage = "url('sC:\Users\Admin\Desktop\Manuskrypt\Manuskrypt\src\assets\Frame.svg')";
+    } else {
+        body.style.backgroundImage = "C:\Users\Admin\Desktop\Manuskrypt\Manuskrypt\src\assets\Frame.svg')";
+    }
+}
+updateBackgroundImage();
+
+window.addEventListener('resize', updateBackgroundImage);
+
+
 export function Layout() {
     const location = useLocation();
     const isPageNotFound = location.pathname === '/PageNotFound';
@@ -62,10 +77,10 @@ export function Layout() {
 
                                 >
 
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="App">Home</Link></Nav.Link>
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="/AudioBook">Audiobooki</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle', 'home-navbar-link')} to="App">Home</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle', 'audiobook-navbar-link')} to="/AudioBook">Audiobook</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Books">Books</Link></Nav.Link>
-                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Gifts">Gift</Link></Nav.Link>
+                                    <Nav.Link><Link className={classNames('navMainSite', 'linkStyle', 'gift-navbar-link')} to="Gifts">Gift</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Download">Download</Link></Nav.Link>
                                     <Nav.Link><Link className={classNames('navMainSite', 'linkStyle')} to="Price">Price</Link></Nav.Link>
                                 </Nav>
@@ -131,7 +146,7 @@ export function Layout() {
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Gifts">Gift</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Price">Price</Link></a></li>
                                         <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Books">Books</Link></a></li>
-                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Download">Download app!</Link></a></li>
+                                        <li><a className='footerText'> <Link className={classNames('footerHoverText', 'linkStyle')} to="Download">Download</Link></a></li>
                                     </ul>
                                 </div>
                                 <div className="col-md-3">

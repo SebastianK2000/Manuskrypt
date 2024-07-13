@@ -74,12 +74,12 @@ export function Gifts() {
                 <h2 style={{  }}>Choose a Book</h2>
             </div>
 
-            <div style={{ margin: '20px' }} className='relative flex items-center'>
+            <div className='slider-container'>
                 <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
                 <div
                     ref={sliderRef}
                     id='slider'
-                    className='w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+                    className='slider w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide'
                 >
                     {items.map((item: DataItem, index: number) => (
                         <img

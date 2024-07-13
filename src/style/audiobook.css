@@ -120,10 +120,14 @@
     cursor: pointer;
 }
 
-.productImgStyle {
-}
-
     .productImgStyle:hover {
         transition: 0.3s ease-in !important;
         cursor: pointer;
+    }
+
+
+    @media screen and (max-width: 391px) {
+        .content, .contentStyle, .shop, .bookElement, .bookComponent, .products {
+            max-width: 70% !important;
+        }
     }

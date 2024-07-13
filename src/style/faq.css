@@ -53,14 +53,19 @@
         max-width: 80%;
     }
     
-    .faq-serach-container {
-        max-width: 80%;
-    }
-
     .me-2 {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+}
+
+@media screen and (max-width: 391px) {
+    .according-header {
+        max-width: 80%;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

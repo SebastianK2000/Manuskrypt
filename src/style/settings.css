@@ -189,3 +189,54 @@
     }
     
 }
+
+@media screen and (max-width: 391px) {
+    .mainContainerSettings {
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    .formContainer {
+        width: 90%;
+    }
+    .inputField {
+        width: 90%;
+    }
+    .buttonEmailSaveSettings, .buttonSaveSettings {
+        width: 90%;
+    }
+    .divChangeEmail, .divUserDetails, .divUserLastName, .divUserPassword, .divUserPhone, .divUserAddress {
+        width: 90%;
+    }
+    .recomend-component {
+        width: 110%;
+        margin: 20px;
+        padding: 20px;
+    }
+    .options {
+        width: 100%;
+    }
+    .selectOptionLibraryClub, .selectOptionData, .selectOptionLibraryCard, .selectOptionRecommend, .selectOptionStatic, .selectOptionSubscribe, .selectOptionTransactions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .deleteButton {
+        max-width: 90%;
+    }
+
+    .selectedOptionsView {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recommend-h1 {
+        font-size: 14px !important;
+    }
+
+    .buttonEmailSaveSettings {
+        font-size: 14px !important;
+    }
+    
+}

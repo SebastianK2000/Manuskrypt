@@ -16,9 +16,6 @@ const PricingCard = ({ title, price, storage, users, sendUp }: { title: string, 
             <Link style={{ color: 'lightgray' }} to="/PageNotFound">
                 <button className="card-btn">READ MORE</button>
             </Link>
-
-
-
         </div>
     );
 };

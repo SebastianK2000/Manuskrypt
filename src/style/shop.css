@@ -89,3 +89,10 @@
         transition: 0.3s ease-in !important;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 391px) {
+        .content, .shop {
+            max-width: 90%;
+            margin-left: 2%;
+        }
+    }

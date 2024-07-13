@@ -1,5 +1,43 @@
-.stickyNav-main {
-    max-width: 100%;
+/* Ogólne ustawienia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('src/assets/Frame.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.containerStyles {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mainStyles {
+    flex: 1;
+}
+
+.footerStyles {
+    flex-shrink: 0;
+}
+
+.col-md-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -161,50 +199,7 @@
     right: 15px;
 }
 
-.root {
-    margin: 0;
-    padding: 0;
-}
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-    background-image: url('src/assets/Frame.svg');
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 0;
-    margin: 0;
-}
-
-.containerStyles {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.mainStyles {
-    flex: 1;
-}
-
-.footerStyles {
-    flex-shrink: 0;
-}
-
-.col-md-3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    flex-wrap: wrap;
-}
-
+/* Media queries */
 @media screen and (max-width: 1276px) {
     .logo {
         flex-wrap: wrap;
@@ -340,6 +335,50 @@ body {
 
     .styleNav { 
         position: relative;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .styleNav, .containerFluidStyle, .navbar, .footer, .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .linkStyle {
+        max-width: 30px !important;
+        padding: 0;
+        margin-left: 2%;
+    }
+
+    .home-navbar-link, .audiobook-navbar-link {
+        margin-right: 5px;
+    }
+
+    .gift-navbar-link {
+        margin-left: -20px;
+    }
+
+    .d-flex {
+        margin-right: 30%;
+    }
+
+    #root {
+        background-image: url('C:/Users/Admin/Desktop/Manuskrypt/Manuskrypt/src/assets/Frame.svg');
+    }
+
+    .stickyNav-main {
+        width: 100%;
     }
 }
 

@@ -137,6 +137,7 @@ button {
             gap: 2em;
         }
         .PricingCard {
-            width: 400px;
+            width: 300px;
+            margin-left: 30px;
         }
 }

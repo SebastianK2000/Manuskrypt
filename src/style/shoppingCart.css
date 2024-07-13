@@ -83,3 +83,22 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 391px) {
+    .cart, .cartItem {
+        max-width: 90% !important;
+        max-height: 90% !important;
+    }
+
+    .description {
+        max-width: 50% !important;
+    }
+
+    .description, .countHandler, .addMoreItemCart, .yourCartItems {
+        max-width: 90%;
+    }
+
+    .content {
+        margin-right: 30px;
+    }
+}

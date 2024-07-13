@@ -1,78 +1,98 @@
 .create {
-    max-width: 90%;
+    max-width: 100%;
     margin: 20px;
     text-align: center;
 }
 
-    .create label {
-        text-align: left;
-        display: block;
-        margin-top: 20px;
-        margin-bottom: 20px; 
-        color: #0D1B1E;
-        max-width: 90%;
-    }
+.create label {
+    text-align: left;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #0D1B1E;
+}
 
+.create h2 {
+    font-size: 24px;
+    color: rebeccapurple;
+    margin-bottom: 20px;
+}
 
-    .create h2 {
-        font-size: 24px;
-        color: rebeccapurple;
-        margin-bottom: 20px;
-        max-width: 90%;
-    }
+.create input,
+.create textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
 
-    .create input,
-    .create textarea {
-        width: 100%;
-        padding: 20px;
-        margin: 10px 0 20px 0;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-sizing: border-box;
-        font-size: 16px;
-        max-width: 90%;
-    }
+.create button {
+    background: rebeccapurple;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
 
-    .create button {
-        background: rebeccapurple;
-        color: #fff;
-        border: 0;
-        padding: 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-        max-width: 90%;
-    }
-
-        .create button:hover {
-            background: mediumpurple;
-        }
+.create button:hover {
+    background: mediumpurple;
+}
 
 .descriptions {
-    width: calc(100% - 22px);
-    height: 200px;
+    height: 150px;
     resize: vertical;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-    max-width: 90%;
 }
 
 .labelTop {
     display: flex;
     position: relative;
     top: 13px;
-    max-width: 90%;
 }
 
 .formHelp {
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
     margin: 20px;
     position: relative;
-    right: 20px;
-    max-width: 90%;
 }
 
 .inputHelp {
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
-    max-width: 90%;
+}
+
+@media screen and (max-width: 391px) {
+    .formHelp {
+        max-width: 100%;
+        margin-left: 40px;
+        padding: 20px;
+    }
+
+    .labelTop {
+        top: 5px;
+    }
+
+    .create h2 {
+        font-size: 20px;
+    }
+
+    .create input,
+    .create textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .create button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .descriptions {
+        height: 100px;
+    }
 }
