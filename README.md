@@ -2,7 +2,7 @@
 
 ## Link to the page:
 
-https://manuskrypt.netlify.app
+[https://manuskrypt.netlify.app](https://manuskrypt.netlify.app)
 
 ## DEMO:
 
